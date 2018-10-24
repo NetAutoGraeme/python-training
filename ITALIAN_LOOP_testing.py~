@@ -1,0 +1,84 @@
+import random
+
+#functions
+#=========
+
+# Function checks raw_input to see if this is a valid integer and returns a true or false
+def RepresentsInt(s):
+    try: 
+        int(s)
+        return True
+    except ValueError:
+        return False
+
+#Function to Option 1 of script
+def option1():
+    answer_no = int(raw_input('How many questions would you like to answer: ')
+        #obtain random integer value between values listed
+        randomvar = random.randint(0,3)
+        # set var 'temp' to be element of PARENTLIST. See phrase lists
+        temp = PARENTLIST[randomvar]
+        # Print argument 2 in randomly selected list
+        print '\nWhat is the Italian translation for >>> %s\n' % temp[1]
+        raw_input('Press Enter for answer...')
+        # Print argument 3 in randomly selected list
+        print '\nAnswer is >>> %s' % temp[2]
+        i = i + 1
+
+def option2():
+    for i in range(0, 3):
+        temp = PARENTLIST[i]
+        # Print argument 2 in randomly selected list
+        print '\nWhat is the Italian translation for >>> %s\n' % temp[1]
+        raw_input('Press Enter for answer...')
+        # Print argument 3 in randomly selected list
+        print '\nAnswer is >>> %s' % temp[2]
+
+#Phrase Lists
+#============
+
+#Define phrases as lists. The number is used for listing/random generation. Arg 2 is the English
+#word, Arg 3 is the Italian word
+LIST1 = [1, 'hello', 'Ciao']
+LIST2 = [2, 'Thank you', 'Grazie']
+LIST3 = [3, 'Beautiful', 'Belissimo']
+#PARENTLIST must maintain all phrase lists to be used as elements
+PARENTLIST = [LIST1, LIST2, LIST3]
+        
+#script
+#======
+
+print '''
+\n\n\n
+\t\t\tITALIAN PHRASE TRAINING
+\t\t\t=======================
+'''
+
+print '''
+\n\n\n
+This script allows the user to improve their Italian Phrases.
+Elle Woods uses this script when travelling to meet Vincenzo in Tuscony
+and swears by it ;-)
+\n\n\n
+Script Options...
+1) Randomly generated phrases
+2) Complete phrase list
+3) Wildcard ???
+'''
+
+# Below allows user to specify an integer and test whether this is true or false (string)
+# Depending on the option the various function is then performed!
+command = raw_input('Select an option: ')
+if RepresentsInt(command) == True:
+   command2 = int(command)
+else:
+    print 'Sorry incorrect entry'
+
+if command2 == 1:
+    option1()
+elif command2 == 2:
+    option2()
+elif command2 == 3:
+    print '\t*** Pick your prize @ http://www.mulberry.com/gb/shop/women/bags *** '
+else:
+    print 'Does not compute'

@@ -1,0 +1,8 @@
+with open("text", "r+") as f:
+    file_object = f.read()
+    print file_object
+    for element in file_object:
+        file_object_2 = file_object.split(",")
+        print file_object_2
+        f.close()
+
