@@ -21,11 +21,10 @@ def FindStock(html):
 #quote_page = "https://www.johnlewis.com/sony-bravia-kd75zf9-led-hdr-4k-ultra-hd-smart-android-tv-75-inch-with-freeview-hd-youview-black/p3753523"
 
 #Out of stock item
-quote_page = "https://www.johnlewis.com/mulberry-continental-leather-wallet/rosewater/p3399210"
+#quote_page = "https://www.johnlewis.com/mulberry-continental-leather-wallet/rosewater/p3399210"
 
 #Test page with in stock message & stock number
-#quote_page = "https://www.johnlewis.com/mulberry-bayswater-small-classic-grain-leather-grab-bag/rosewater/p3591083"
-
+quote_page = "https://www.johnlewis.com/mulbery-darley-classic-grain-leather-small-satchel-bag/p3830135"
 
 #Perform get for page code of specified URL
 page = urllib2.urlopen(quote_page)
