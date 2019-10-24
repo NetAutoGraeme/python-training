@@ -1,0 +1,54 @@
+Fetch branches from origin
+==========================
+
+$ git fetch
+
+
+Check status
+============
+
+$ git status
+
+
+Check log
+=========
+
+$ git log
+
+
+Stage file/dir to repo for next commit
+======================================
+
+git add <.> or <name>
+
+
+Commit a staged snaphost
+=======================
+
+$ git commit -a
+$ git commit -m <"message">
+
+
+Create branch
+=============
+
+$ git branch <name>		#must checkout to move into branch
+$ git checkout -b <name>	#Creates a branch and automagically checks out
+
+
+Push branch to <remote>, along with necessary commits and objects
+=================================================================
+
+$ git push <remote> <branch>
+
+
+Delete remote branch
+====================
+
+$ git push -d <remote_name> <branch_name>
+
+
+Delete local branch
+===================
+
+$ git branch -d <branch_name>
