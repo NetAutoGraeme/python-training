@@ -29,6 +29,11 @@ $ git commit -a
 $ git commit -m <"message">
 
 
+Pull updates from remote repo
+=============================
+
+$ git pull
+
 Create branch
 =============
 
