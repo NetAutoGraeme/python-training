@@ -24,7 +24,7 @@ def FindStock(html):
 #quote_page = "https://www.johnlewis.com/mulberry-continental-leather-wallet/rosewater/p3399210"
 
 #Test page with in stock message & stock number
-quote_page = "https://www.johnlewis.com/mulbery-darley-classic-grain-leather-small-satchel-bag/p3830135"
+quote_page = "https://www.johnlewis.com/mulberry-bayswater-with-strap-small-classic-grain-leather-bag-black/p3915093"
 
 #Perform get for page code of specified URL
 page = urllib2.urlopen(quote_page)
@@ -34,8 +34,8 @@ var = BeautifulSoup(page, 'html.parser')
 
 #Perform find using BeautifulSoup for the first entry of x with particular
 #attributes
-price_box = var.find('p', attrs={'class': 'price price--large'})
-name_box = var.find('h1', attrs={'class': 'product-header__title'})
+price_box = var.find('p', attrs={'class': 'para--5ZlCo'})
+name_box = var.find('h1', attrs={'class': 'title--16ZOc'})
 stock_box = FindStock(var)    
 
 print "\n\n\t\t\tATTENTION ANNE-MARIE!!!\n\n\nThe %s " \
